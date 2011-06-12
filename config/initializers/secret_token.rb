@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Bilbo::Application.config.secret_token = '2eadfc2ec84f92ec5d22f7875754967850805012d7c4b53064269b4572e185d07b10282b21424f712eebf0c47e083c5875545ca509adc27bed1580f5c60ca641'
+Bilbo::Application.config.secret_token = '8a8b50c81003b606be56bae0bb7a404cfe885ed188f958ec11d32a28ef7187fef4083212fa3d87a1a32013fb9c65dc357007edf4db5146a26902055b5768c575'

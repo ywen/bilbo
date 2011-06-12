@@ -1,14 +1,27 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+# Pick the frameworks you want:
+# require "active_record/railtie"
+require "action_controller/railtie"
+require "action_mailer/railtie"
+require "active_resource/railtie"
+# require "rails/test_unit/railtie"
+require 'yaml'
+YAML::ENGINE.yamler = 'syck'
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
-require 'mongoid/railtie'
 
 module Bilbo
   class Application < Rails::Application
+
+    # don't generate RSpec tests for views and helpers
+    config.generators do |g|
+      g.view_specs false
+      g.helper_specs false
+    end
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -36,11 +49,6 @@ module Bilbo
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-    config.generators do |g|
-      g.orm             :mongoid
-      g.template_engine :haml
-      g.test_framework  :rspec, :fixture => false
-    end
 
     # Enable the asset pipeline
     config.assets.enabled = true
