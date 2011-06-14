@@ -1,3 +1,4 @@
 %h1 Home#index
--@users.each do |user|
-  %p=user.username
+-@wiki.pages.each do |page|
+  %p
+    %a{:href => "../wiki/#{page.filename}"}=page.name

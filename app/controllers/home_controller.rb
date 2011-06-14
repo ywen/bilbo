@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @users = User.all
+    @wiki = Gollum::Wiki.new("wiki")
+    p @wiki.pages.methods.sort
   end
 
 end
