@@ -1,8 +1,5 @@
 Bilbo::Application.routes.draw do
-  get "home/index"
-
-  devise_for :users
-
+  match "users/sign_up" => "users#new"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
