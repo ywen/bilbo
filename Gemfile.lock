@@ -172,6 +172,7 @@ GEM
       activesupport (~> 3.0)
       railties (~> 3.0)
       rspec (~> 2.6.0)
+    rspec_more (0.2)
     rubyzip (0.9.4)
     sanitize (2.0.2)
       nokogiri (~> 1.4.4)
@@ -228,5 +229,6 @@ DEPENDENCIES
   mongoid-rspec (>= 1.4.4)
   rails (= 3.1.0.rc4)
   rspec-rails (>= 2.6.1)
+  rspec_more
   sass-rails (~> 3.1.0.rc)
   uglifier

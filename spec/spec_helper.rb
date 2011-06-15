@@ -17,6 +17,7 @@ RSpec.configure do |config|
   # config.mock_with :rr
   config.mock_with :rspec
   config.include Mongoid::Matchers
+  config.extend(RspecMore::ActiveRecord, :type => :model)
   require 'database_cleaner'
   config.before(:suite) do
     DatabaseCleaner.strategy = :truncation

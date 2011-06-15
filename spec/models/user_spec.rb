@@ -7,6 +7,9 @@ describe User do
       subject.should be_valid
     end
 
-
+    require_attribute :login
+    require_attribute :name
+    require_attribute :password
+    require_attribute :email
   end
 end
