@@ -1,0 +1,32 @@
+#Mongoid Configuration
+# =====================
+#
+# Copy this file to config/mongoid.yml and
+# modify it accordingly. This file will automatically
+# be copied to shared/config on the server when
+# `cap deploy:setup` is ran the first time. Be sure
+# to place production specific settings there
+
+defaults: &defaults
+  host: localhost
+  port: 27017
+  username: travis
+  password: travis
+# slaves:
+#   - host: slave1.local
+#     port: 27018
+#   - host: slave2.local
+#     port: 27019
+
+development:
+  <<: *defaults
+  database: bilbo_development
+
+test:
+  <<: *defaults
+  database: bilbo_test
+
+# set these environment variables on your prod server
+production:
+  <<: *defaults
+  database: bilbo_production
