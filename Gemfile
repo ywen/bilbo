@@ -19,7 +19,7 @@ gem 'jquery-rails'
 gem 'gollum'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'passenger'
 
 # Deploy with Capistrano
 # gem 'capistrano'
