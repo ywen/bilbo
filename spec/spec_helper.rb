@@ -3,6 +3,14 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 
+require 'mongoid'
+
+Mongoid.configure do |config|
+  config.master = Mongo::Connection.new.db('bilbo_test')
+  config.allow_dynamic_fields = false
+end
+
+
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
