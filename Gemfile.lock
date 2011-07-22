@@ -196,6 +196,7 @@ GEM
     sinatra (1.2.6)
       rack (~> 1.1)
       tilt (< 2.0, >= 1.2.2)
+    spork (0.9.0.rc9)
     sprockets (2.0.0.beta.10)
       hike (~> 1.0)
       rack (~> 1.0)
@@ -241,5 +242,6 @@ DEPENDENCIES
   rspec-rails (>= 2.6.1)
   rspec_more
   sass-rails (~> 3.1.0.rc)
+  spork (~> 0.9.0.rc)
   therubyracer
   uglifier
