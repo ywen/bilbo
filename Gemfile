@@ -18,8 +18,7 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'gollum'
 
-# Use unicorn as the web server
-gem 'passenger'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
