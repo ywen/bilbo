@@ -1,0 +1,3 @@
+production : wiki
+development: wiki
+test: spec/wiki

@@ -1,3 +1,3 @@
-script: "bundle exec rake spec"
+script: "cp config/wiki.yml.sample config/wiki.yml; bundle exec rake spec"
 rvm:
 - 1.9.2

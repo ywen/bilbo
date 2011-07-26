@@ -40,6 +40,10 @@ Spork.prefork do
     config.before(:each) do
       DatabaseCleaner.clean
     end
+
+    config.after(:each) do
+      CustomFactory.destroy_all
+    end
   end
 
 end
