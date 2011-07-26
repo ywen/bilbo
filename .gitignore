@@ -6,3 +6,4 @@ tmp/
 config/mongoid.yml
 wiki
 bin
+config/wiki.yml
