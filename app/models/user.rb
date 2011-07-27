@@ -6,6 +6,8 @@ class User
   field :name
   field :email
   validates_presence_of :name, :login
+  validates_uniqueness_of :login
+  
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   attr_accessible :login, :name, :email, :password, :password_confirmation, :remember_me

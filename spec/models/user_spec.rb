@@ -11,5 +11,8 @@ describe User do
     require_attribute :name
     require_attribute :password
     require_attribute :email
+
+    uniqueness_on :login
+    uniqueness_on :email
   end
 end
