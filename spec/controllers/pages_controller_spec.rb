@@ -23,12 +23,5 @@ describe PagesController do
       end
     end
 
-    context "when the user hasn't logged in" do
-      it "should redirect to the sign_in page" do
-        get :index
-        response.should redirect_to("/users/sign_in")
-      end
-    end
-
   end
 end
