@@ -3,6 +3,8 @@ source 'http://rubygems.org'
 gem 'execjs'
 
 gem 'therubyracer'
+gem 'compass'
+gem 'compass-susy-plugin'
 
 gem 'rails', '3.1.0.rc4'
 

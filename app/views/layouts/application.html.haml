@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title Bilbo
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application" 
+    = csrf_meta_tags
+
+  %body
+    %ul.hmenu
+      =render '/layouts/registration_items'
+      =render '/layouts/login_items'
+    = yield
