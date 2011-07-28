@@ -7,12 +7,10 @@ describe User do
       subject.should be_valid
     end
 
-    require_attribute :login
     require_attribute :name
     require_attribute :password
     require_attribute :email
 
-    uniqueness_on :login
     uniqueness_on :email
   end
 end

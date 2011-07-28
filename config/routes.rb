@@ -1,6 +1,10 @@
 Bilbo::Application.routes.draw do
   devise_for :users
   resources :pages
+  namespace :user do
+    root :to => 'pages#index'
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
