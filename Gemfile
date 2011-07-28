@@ -3,6 +3,9 @@ source 'http://rubygems.org'
 gem 'execjs'
 
 gem 'therubyracer'
+gem 'compass', git: 'https://github.com/chriseppstein/compass.git', branch: 'rails31'
+gem 'compass-susy-plugin'
+
 gem 'rails', '3.1.0.rc4'
 
 # Asset template engines
